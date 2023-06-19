@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    margin: 0;
+    background-color: #ffffff; 
+}
+
+.navbar {
+    background-color: #1565c0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1565c0; 
+}
+
+#base-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(21, 101, 192, 1),rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url("cover.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(222, 157, 45, 0.9); 
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 50px rgba(222, 157, 45, 0.9);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(21, 101, 192, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 50px rgba(222, 157, 45, 0.9);
+    }
+}
+
+label {
+    font-size: 1.5em;
+}
+
+label,
+input,
+select {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#stud-head {
+    font-size: 3em;
+    color: #fff;
+}
+#stud-head2 {
+    font-size: 3em;
+    color: #1565c0;
+}
+#stud-head3 {
+    font-size: 3em;
+    color: #1565c0;
+}
+
+.cool-button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1565c0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.cool-button2:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#how-to {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#how-to-head {
+    font-size: 2em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"],
+button[type="button"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1565c0;
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 2em;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #ffb300;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Fancy Styles */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #1565c0; /* Blue primary color */
+    outline: none;
+}
+
+.select-wrapper {
+    position: relative;
+    padding-right: 20px;
+}
+
+select {
+    appearance: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #aaa transparent transparent transparent;
+    pointer-events: none;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: linear-gradient(to bottom, #ffffff, #dca741);
+    
+
+}
+
+.faq-dropdown {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 3em;
+}
+
+.faq-question:hover {
+    background-color: #333;
+}
+
+.faq-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: -1px;
+    font-size: 2em;
+}
+
+.faq-dropdown input[type="checkbox"] {
+    display: none;
+}
+
+.faq-dropdown input[type="checkbox"]:checked ~ .faq-content {
+    display: block;
+    animation-name: fadeIn;
+    background-color: #f9f9f9;
+    border-color: #ddd;
+    border-radius: 5px;
+    margin-top: -1px;
+}
+
+.faq-content p {
+    margin: 0;
+}
+#more-info-sec{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#note{
+    font-size: 2em;
+    text-align: center;
+}
+/* Footer */
+footer {
+    background-color: #1565c0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    form {
+        padding: 1em;
+        width: 100%;
+        height: auto;
+        font-size: 3em;
+        animation: none;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    #base-container{
+        padding: 20px;
+    }
+    #stud-head {
+        font-size: 5em;
+    }
+   
+
+    #how-to-head {
+        text-shadow: none;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    label,
+    input,
+    select {
+        font-size: 0.9em;
+    }
+    footer{
+        font-size: 2em;
+    }
+
+    input[type="date"] {
+        padding: 5px;
+        font-size: 0.5em;
+    }
+
+    #dob {
+        font-size: 1.25em;
+    }
+
+    button[type="submit"],
+    button[type="button"] {
+        margin-top: 15px;
+        padding: 12px 16px;
+        font-size: 1em;
+        border-radius: 1em;
+    }
+    .faq-section {
+        padding: 10px;
+        font-size: 2em;
+    }
+
+    .faq-question {
+        padding: 8px;
+        font-size: 2em;
+
+    }
+
+    .faq-content {
+        padding: 8px;
+        font-size: 1.5em;
+    }
+
+    #more-info-sec {
+        padding: 2em;
+    }
+
+    #note {
+        font-size: 1.5em;
+    }
+    .cool-button2{
+        font-size: 1.1em;
+    }
+}
+

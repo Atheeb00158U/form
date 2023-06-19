@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <a href = "#"><img class="logo" src="prime.png" alt="Logo 2"></a>
+        </div>
+    </div>
+    
+    <div id="base-container">
+    <h1 id="stud-head">Student Details Form</h1>
+    <form id="studentForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required>
+        
+        <label for="email">Email ID</label>
+        <input type="email" id="email" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="school">School Name:</label>
+        <input type="text" id="school" required>
+        
+        <label for="board">Board:</label>
+        <select id="board" required>
+            <option value="">Select Board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="IB">IB</option>
+            <option value="IGCSE">IGCSE</option>
+            <option value="STATE BOARD">State Board</option>
+        </select>
+        
+        <label for="grade">Grade:</label>
+        <select id="grade" required>
+            <option value="">Select Grade</option>
+            <option value="Recently Graduated">Recently Graduated</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </form></div>
+
+    <div class="faq-section">
+        <h1 id = "stud-head2">How to register?</h1>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq1">
+            <label for="faq1" class="faq-question">Step 1</label>
+            <div class="faq-content">
+                <b>Registration Fee:</b> Please note that registration fee is required to proceed with the registration process.
+
+            </div>
+        </div>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq2">
+            <label for="faq2" class="faq-question">Step 2</label>
+            <div class="faq-content">
+                <b>Check your email:</b> Look for an email from our CPS Prime MUN in your inbox.
+            </div>
+        </div>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq3">
+            <label for="faq3" class="faq-question">Step 3</label>
+            <div class="faq-content">
+                <b>Open the email:</b> Find the Google Forms link provided in the email.
+            </div>
+        </div>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq4">
+            <label for="faq4" class="faq-question">Step 4</label>
+            <div class="faq-content">
+                <b>Access the form:</b> Click on the link to access the registration form.
+            </div>
+        </div>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq5">
+            <label for="faq5" class="faq-question">Step 5</label>
+            <div class="faq-content">
+                 <b>Complete the form:</b> Fill out all the required fields accurately and provide any additional information if needed.
+            </div>
+        </div>
+        <div class="faq-dropdown">
+            <input type="checkbox" id="faq6">
+            <label for="faq6" class="faq-question">Step 6</label>
+            <div class="faq-content">
+                <b>Confirmation email:</b> After submitting the form, you will receive an email with your committee allocation and further instructions.
+            </div>
+
+        </div>
+            <!-- Add more FAQ dropdowns here -->
+
+        <div id = "more-info-sec">
+            <h1 id = "stud-head3">N O T E</h1>
+           <h2 id ="note"> Please ensure that you follow these steps to complete your registration for CPS Prime MUN 2023.</h2>
+           <a class="cool-button2" href="https://cpsprimemun.in/" target="_blank">Visit CPS Prime MUN Website</a>
+        </div>
+
+    </div>
+    
+    
+    
+    <footer>
+        <p>&copy; 2023 Chennai Public School. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
